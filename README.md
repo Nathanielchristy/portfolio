@@ -32,8 +32,56 @@ A modern, responsive portfolio website showcasing my skills, experience, and pro
 - **Education & Certificates**: Educational background and professional certifications
 - **Contact Section**: Contact form and information
 
-## 🔧 Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/nathaniel-portfolio.git
+
+## 🎨 Customization
+
+### Personal Information
+
+Update your personal information in `app/page.tsx`:
+
+- Name and title
+- Contact information
+- Social media links
+- About section content
+
+
+### Experience and Projects
+
+Modify the `ExperienceCard` and `ProjectCard` components in `app/page.tsx` to reflect your own experience and projects.
+
+### Styling
+
+- **Colors**: Modify the color scheme in `tailwind.config.ts`
+- **Typography**: Update font styles in `app/globals.css`
+- **Layout**: Adjust layout and spacing in individual components
+
+
+### Profile Picture
+
+Replace the placeholder image with your own profile picture:
+
+1. Add your image to the `public` directory
+2. Update the image path in the hero section of `app/page.tsx`
+
+
+## 📤 Deployment
+
+This portfolio can be easily deployed to Vercel:
+
+1. Push your code to a GitHub repository
+2. Import the project to Vercel
+3. Vercel will automatically build and deploy your site
+
+
+Alternatively, you can deploy to other platforms like Netlify, GitHub Pages, or any hosting service that supports Next.js.
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Contact
+
+- **Email**: [nathanielinnu@gmail.com](mailto:nathanielinnu@gmail.com)
+- **Phone**: +971526001790
+- **Location**: Dubai, UAE
