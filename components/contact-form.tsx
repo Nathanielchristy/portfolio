@@ -26,27 +26,36 @@ export default function ContactForm() {
     }))
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+  setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
+
+    if (!res.ok) throw new Error("Failed to send message")
 
     toast({
       title: "Message sent!",
       description: "Thank you for your message. I'll get back to you soon.",
     })
 
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
+    setFormData({ name: "", email: "", subject: "", message: "" })
+  } catch (error) {
+    toast({
+      title: "Error",
+      description: "Failed to send your message. Please try again later.",
+      variant: "destructive",
     })
-
+  } finally {
     setIsSubmitting(false)
   }
+}
+
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6 relative bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
