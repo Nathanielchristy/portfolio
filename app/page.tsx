@@ -140,7 +140,7 @@ export default function Home() {
               </div>
               <div className="flex-1 flex justify-center">
                 <div className="relative w-72 h-72 rounded-full overflow-hidden border-4 border-white/20 shadow-lg">
-                  <img src="/placeholder.svg?height=300&width=300" alt="Nathaniel Christy" className="object-cover" />
+                  <img src="./profile.png" alt="Nathaniel Christy" className="object-cover" />
                 </div>
               </div>
             </div>
@@ -193,7 +193,7 @@ export default function Home() {
                 <div className="text-gray-600 dark:text-gray-400">Projects Completed</div>
               </div>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                <div className="text-4xl font-bold text-primary mb-2">3</div>
+                <div className="text-4xl font-bold text-primary mb-2">4</div>
                 <div className="text-gray-600 dark:text-gray-400">Companies Worked</div>
               </div>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
