@@ -392,13 +392,13 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/nathaniel-christy-4325011a0/"
                     className="bg-gray-200 dark:bg-gray-700 p-3 rounded-full hover:bg-primary hover:text-white transition-colors"
                   >
                     <Linkedin className="h-5 w-5" />
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/Nathanielchristy"
                     className="bg-gray-200 dark:bg-gray-700 p-3 rounded-full hover:bg-primary hover:text-white transition-colors"
                   >
                     <Github className="h-5 w-5" />
